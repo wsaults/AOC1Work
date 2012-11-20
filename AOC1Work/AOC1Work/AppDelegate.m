@@ -15,8 +15,8 @@
 {
     // Variables declared at the top.
     // Lets call this my psudo-interface.
-    float parsec = 3.26; // a parsec is approximately 3.26 light-years
-    float lengthOfEquator = 40075016.686; // length of the equator
+    float parsec = 3.26f; // a parsec is approximately 3.26 light-years
+    float lengthOfEquator = 40075016.686f; // length of the equator
     int nowInSeconds = [[NSDate date] timeIntervalSince1970];
     BOOL isTheEarthRound = YES;
     
