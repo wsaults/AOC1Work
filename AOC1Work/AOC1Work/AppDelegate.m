@@ -29,9 +29,9 @@
     // A for loop...
     for (int i = 5; i >= 0; i--) {
         NSLog(@"%d", i);
-        if (i == 0) {               // that contains a conditional...
+        if (i == 0) {               // ...that contains a conditional...
             int j = 0;
-            while (j < 3) {         // which contains a while loop!
+            while (j < 3) {         // ...which contains a while loop!
                 NSLog(@"GO!");      // what monstrosities will come next????
                 j++;
             }
