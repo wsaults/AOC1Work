@@ -12,24 +12,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
-
+    // Variables declared at the top.
+    // Lets call this my psudo-interface.
+    float parsec = 3.26; // is approximately 3.26 light-years
+    NSDate *date = [NSDate date];
+    double dateInSeconds = [date timeIntervalSince1970];
+    
+    // The intro:
     NSLog(@"Hello, it's a fine day here in the land of Objective-C!");
     NSLog(@"I do hope you're enjoying your self.");
-    NSLog(@"Ah look the tour will begin shortly. Please hold on to any dangling pointers and required protocol methods, it's about to get bumpy.");
+    NSLog(@"Ah look the tour will begin shortly. Please hold on to any dangling pointers and required protocol methods,");
+    NSLog(@"it's about to get bumpy.");
     
+    // A for loop...
     for (int i = 5; i >= 0; i--) {
         NSLog(@"%d", i);
-        if (i == 0) {
+        if (i == 0) {               // that contains a conditional...
             int j = 0;
-            while (j < 3) {
-                NSLog(@"GO!");
+            while (j < 3) {         // which contains a while loop!
+                NSLog(@"GO!");      // what monstrosities will come next????
                 j++;
             }
         }
     }
+    
+    NSLog(@"===================================================");
+    NSLog(@"============== You just entered... ================");
+    NSLog(@"=========== The OBJECTIVE-C ZONE!!! ===============");
+    NSLog(@"===================================================");
+    
+    // Logging some variables... Oh look kids, one has been type cast to an int!
+    NSLog(@"A parsec float: %.8f", parsec);  // this float value has a precision of 8 decimal places.
+    NSLog(@"A parsec int: %i", (int)parsec); // how dare you truncate a parsec!
+    
+    // Next up we shall do some comparisons. Be not afraid.
+   
 
-//    Create a variable using the float data type. Cast the float to an int and using NSLog, output both the initial float value as well as the int value.
 //    Perform an AND, OR comparison. Use float, int and BOOL types. BOOL values should be YES or NO and written in all caps.
 //    Use an if, else if and else check using any of the data types of your choice.
     
