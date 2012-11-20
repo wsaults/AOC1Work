@@ -64,6 +64,10 @@
         }
     }
     
+    NSLog(@"Well that's all!");
+    NSLog(@"Thanks for dropping by!!!");
+    NSLog(@"I hope you had as much fun as I did!");
+    
     // Tell the delegate that the app is almost ready to run.
     return YES;
 }
