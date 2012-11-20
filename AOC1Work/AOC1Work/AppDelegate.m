@@ -23,8 +23,8 @@
     // The intro:
     NSLog(@"Hello, it's a fine day here in the land of Objective-C!");
     NSLog(@"I do hope you're enjoying your self.");
-    NSLog(@"Ah look the tour will begin shortly. Please hold on to any dangling pointers and required protocol methods,");
-    NSLog(@"it's about to get bumpy.");
+    NSLog(@"Ah look the tour will begin shortly. Please hold on to any dangling pointers");
+    NSLog(@"and required protocol methods, it's about to get bumpy.");
     
     // A for loop...
     for (int i = 5; i >= 0; i--) {
