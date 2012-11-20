@@ -14,9 +14,10 @@
 {
     // Variables declared at the top.
     // Lets call this my psudo-interface.
-    float parsec = 3.26; // is approximately 3.26 light-years
-    NSDate *date = [NSDate date];
-    double dateInSeconds = [date timeIntervalSince1970];
+    float parsec = 3.26; // a parsec is approximately 3.26 light-years
+    float lengthOfEquator = 40075016.686; // length of the equator
+    int nowInSeconds = [[NSDate date] timeIntervalSince1970];
+    BOOL isTheEarthRound = YES;
     
     // The intro:
     NSLog(@"Hello, it's a fine day here in the land of Objective-C!");
@@ -46,12 +47,24 @@
     NSLog(@"A parsec int: %i", (int)parsec); // how dare you truncate a parsec!
     
     // Next up we shall do some comparisons. Be not afraid.
-   
-
-//    Perform an AND, OR comparison. Use float, int and BOOL types. BOOL values should be YES or NO and written in all caps.
-//    Use an if, else if and else check using any of the data types of your choice.
+    /*
+     So here's what's happening...
+     We check to see if the lengthOfEquator is less than nowInSeconds AND if the earth is NOT round.
+     If that condition is true then enter the conditional.
+                                            *** OR ***
+     If the lengthOfEquator is less than nowInSeconds then enter the conditional.
+     */
+    if (((lengthOfEquator < nowInSeconds) && (!isTheEarthRound)) || (lengthOfEquator < nowInSeconds)) {
+        if (lengthOfEquator > nowInSeconds) {
+            NSLog(@"nowInSeconds: %i is less than %f", nowInSeconds, lengthOfEquator);
+        } else if (lengthOfEquator == nowInSeconds) {
+            NSLog(@"nowInSeconds: %i is equal to %f", nowInSeconds, lengthOfEquator);
+        } else {
+            NSLog(@"The earth is round: %@", (isTheEarthRound == 0) ? @"NO" : @"YES");
+        }
+    }
     
-    
+    // Tell the delegate that the app is almost ready to run.
     return YES;
 }
 							
